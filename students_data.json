@@ -1,0 +1,167 @@
+{
+	"26BCE10284": {
+		"info": [
+			"Dheer",
+			"F",
+			"CSE",
+			2
+		],
+		"habits": [
+			"EARLY",
+			1,
+			1,
+			"SILENT",
+			"VEG"
+		]
+	},
+	"26BCE10190": {
+		"info": [
+			"Ananya Iyer",
+			"F",
+			"CSE",
+			2
+		],
+		"habits": [
+			"EARLY",
+			1,
+			1,
+			"SILENT",
+			"VEG"
+		]
+	},
+	"26BIT10452": {
+		"info": [
+			"Sneha Reddy",
+			"F",
+			"IT",
+			2
+		],
+		"habits": [
+			"EARLY",
+			2,
+			1,
+			"SILENT",
+			"VEG"
+		]
+	},
+	"25BEC10078": {
+		"info": [
+			"Priya Sharma",
+			"F",
+			"ECE",
+			3
+		],
+		"habits": [
+			"MODERATE",
+			2,
+			2,
+			"MODERATE",
+			"ANY"
+		]
+	},
+	"26BCE10891": {
+		"info": [
+			"Rhea Sen",
+			"F",
+			"CSE",
+			2
+		],
+		"habits": [
+			"MODERATE",
+			3,
+			3,
+			"MUSIC",
+			"NON_VEG"
+		]
+	},
+	"25BME10304": {
+		"info": [
+			"Tanvi Kapoor",
+			"F",
+			"MECH",
+			3
+		],
+		"habits": [
+			"NIGHT",
+			5,
+			5,
+			"MUSIC",
+			"NON_VEG"
+		]
+	},
+	"26BCE10042": {
+		"info": [
+			"Aarav Sharma",
+			"M",
+			"CSE",
+			1
+		],
+		"habits": [
+			"NIGHT",
+			4,
+			2,
+			"SILENT",
+			"VEG"
+		]
+	},
+	"26BCE10115": {
+		"info": [
+			"Rohan Verma",
+			"M",
+			"CSE",
+			1
+		],
+		"habits": [
+			"NIGHT",
+			4,
+			3,
+			"SILENT",
+			"VEG"
+		]
+	},
+	"25BEC10230": {
+		"info": [
+			"Neeraj Kumar",
+			"M",
+			"ECE",
+			2
+		],
+		"habits": [
+			"MODERATE",
+			3,
+			2,
+			"MODERATE",
+			"ANY"
+		]
+	},
+	"26BIT10319": {
+		"info": [
+			"Siddharth Patel",
+			"M",
+			"IT",
+			1
+		],
+		"habits": [
+			"MODERATE",
+			3,
+			3,
+			"MUSIC",
+			"NON_VEG"
+		]
+	},
+	"25BME10115": {
+		"info": [
+			"Vikram Singh",
+			"M",
+			"MECH",
+			2
+		],
+		"habits": [
+			"EARLY",
+			2,
+			5,
+			"MUSIC",
+			"NON_VEG"
+		]
+	}
+}
