@@ -179,7 +179,7 @@ Rank | Reg No       | Name               | Dept     | Match %  | Overall Rating 
 
 ## 8. Submission Guidelines Checklist
 
-- [x] **Public GitHub Repository:** Strictly formatted root URL (`https://github.com/{username}/{repo}`).
+- [x] **Public GitHub Repository:** Strictly formatted root URL (`https://github.com/DheerKumarSharma001/roommate-match-predictor`).
 - [x] **README.md at root:** Complete setup, running, and testing documentation included.
 - [x] **statement.md at root:** Contains problem statement, scope, target users, and features.
 - [x] **Project Report PDF:** 15-Section PDF matching the exact VITyarthi guidelines.
