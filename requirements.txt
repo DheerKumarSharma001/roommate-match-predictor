@@ -1,2 +1,0 @@
-# Only 1 optional external library for generating the report PDF
-fpdf>=1.7.2
