@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="card">
+  <h2>Room Assignment</h2>
+  <form method="post" style="margin-bottom: 10px;">
+    <input type="hidden" name="action" value="auto_assign" />
+    <button type="submit">Auto Assign Rooms</button>
+  </form>
+
+  <form method="post" style="margin-bottom: 16px;">
+    <input type="hidden" name="action" value="manual_assign" />
+    <input type="text" name="reg_no" placeholder="Registration Number" required />
+    <input type="text" name="room_no" placeholder="Room No (e.g., R204)" required />
+    <button type="submit">Manual Assign</button>
+  </form>
+
+  <table>
+    <thead><tr><th>Room</th><th>Reg No</th><th>Name</th><th>Gender</th><th>Dept</th><th>Year</th></tr></thead>
+    <tbody>
+      {% for a in assignments %}
+      <tr>
+        <td>{{ a.room_no }}</td>
+        <td>{{ a.reg_no }}</td>
+        <td>{{ a.name }}</td>
+        <td>{{ a.gender }}</td>
+        <td>{{ a.dept }}</td>
+        <td>{{ a.year }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

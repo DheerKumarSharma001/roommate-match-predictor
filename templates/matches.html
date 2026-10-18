@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block body %}
+{% set info = student.info %}
+{% set habits = student.habits %}
+<div class="card">
+  <h2>Matches for {{ info[0] }} ({{ reg_no|upper }})</h2>
+  <p class="muted">{{ info[2] }} | Year {{ info[3] }} | {{ info[1] }} | Sleep {{ habits[0] }}, Clean {{ habits[1] }}, Noise {{ habits[2] }}, Study {{ habits[3] }}, Diet {{ habits[4] }}</p>
+  {% if matches %}
+  <table>
+    <thead>
+      <tr><th>#</th><th>Reg No</th><th>Name</th><th>Dept</th><th>Year</th><th>Match %</th><th>Rating</th><th>Tier</th></tr>
+    </thead>
+    <tbody>
+      {% for m in matches %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ m[1] }}</td>
+        <td>{{ m[2] }}</td>
+        <td>{{ m[3] }}</td>
+        <td>{{ m[4] }}</td>
+        <td>{{ m[0] }}</td>
+        <td>{{ m[5]['rating'] }}/5.0 {{ m[5]['stars'] }}</td>
+        <td>{{ m[5]['tier'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>No eligible matches found.</p>
+  {% endif %}
+</div>
+{% endblock %}
