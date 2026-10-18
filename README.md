@@ -28,14 +28,31 @@ roommate-match-predictor/
 └── requirements.txt
 ```
 
-## 🚀 Run the UI
+## 🚀 Run the Website (Live Python Server)
 
 ```bash
 pip install -r requirements.txt
 python main.py
 ```
 
-Then open: `http://127.0.0.1:5000`
+Then open: `http://127.0.0.1:8000`
+
+### Environment variables (for deployment)
+
+- `HOST` (default: `0.0.0.0` in `main.py`)
+- `PORT` (default: `8000`)
+- `ROOMMATCH_SECRET_KEY` (recommended in production)
+- `DEBUG` (only for local dev when running `app.py` directly)
+
+Example:
+
+```bash
+HOST=0.0.0.0 PORT=8080 ROOMMATCH_SECRET_KEY="your-secret" python main.py
+```
+
+### WSGI entrypoint
+
+Use `wsgi.py` (`application`) if your platform needs a WSGI module path.
 
 ## 🧪 Run tests
 
@@ -49,4 +66,3 @@ python -m unittest test_system.py test_dbms.py
 - `room_assignments` table for room allocation.
 - Indexes on `gender`, `dept`, `year`, and `room_no`.
 - Query-level pagination (`LIMIT/OFFSET`) for large datasets.
-

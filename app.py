@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 from dbms import (
@@ -13,7 +15,7 @@ from dbms import (
 from matcher import SLEEP_MAP, STUDY_MAP, DIET_MAP
 
 app = Flask(__name__)
-app.secret_key = "roommatch-dev-secret"
+app.secret_key = os.getenv("ROOMMATCH_SECRET_KEY", "roommatch-dev-secret")
 
 init_db()
 
@@ -102,4 +104,7 @@ def rooms():
 
 
 if __name__ == "__main__":
-    app.run()
+    host = os.getenv("HOST", "127.0.0.1")
+    port = int(os.getenv("PORT", "5000"))
+    debug = os.getenv("DEBUG", "false").strip().lower() == "true"
+    app.run(host=host, port=port, debug=debug)
